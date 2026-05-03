@@ -4,82 +4,59 @@ A **Streamlit-based predictive analytics web application** that forecasts short-
 
 ---
 
+## 🔗 Project Links
+
+* 📁 **GitHub Repository:**
+  https://github.com/sudip758582/ferry-demand-forecasting
+
+* 💻 **Local Dashboard (runs on your system only):**
+  http://localhost:8503/
+
+---
+
 ## 📌 Project Overview
 
-This project aims to build a **Predictive Decision Support System** for ferry operations.
-It helps estimate future ticket demand at short intervals (15 minutes to 2 hours), enabling better planning, crowd management, and operational efficiency.
+This project is a **Predictive Decision Support System** designed to forecast ferry ticket demand at short intervals (15 minutes to 2 hours).
+It helps improve operational planning, reduce congestion, and support data-driven decisions.
 
 ---
 
 ## 🚀 Key Features
 
-* 📈 **Exploratory Data Analysis (EDA)**
+* 📈 Exploratory Data Analysis (EDA)
+* 🔮 Short-term demand forecasting (15 min → 2 hours)
+* 🤖 Multiple ML models:
 
-  * Daily trends
-  * Hourly patterns
-  * Weekly & monthly seasonality
-  * Distribution analysis
-
-* 🔮 **Demand Forecasting**
-
-  * Predicts ticket demand for:
-
-    * 15 minutes
-    * 30 minutes
-    * 1 hour
-    * 2 hours
-
-* 🤖 **Machine Learning Models**
-
-  * Moving Average (Baseline)
+  * Moving Average
   * Linear Regression
   * Random Forest
   * Gradient Boosting
-  * ARIMA (Time Series)
-
-* 📊 **Model Evaluation**
-
-  * MAE (Mean Absolute Error)
-  * RMSE (Root Mean Squared Error)
-  * MAPE (Mean Absolute Percentage Error)
-
-* 📉 **Feature Engineering**
-
-  * Lag features (1, 2, 4, 8 intervals)
-  * Rolling mean & standard deviation
-  * Time-based features (hour, weekday, month)
-
-* 📊 **Model Comparison Dashboard**
-
-  * Compare performance across different horizons
-
-* 📋 **Interactive Data Table**
-
-  * Filter and download dataset
+  * ARIMA
+* 📊 Model comparison across horizons
+* 📉 Feature engineering (lags, rolling stats, time features)
+* 📋 Interactive dashboard with filtering & download
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Programming Language:** Python
-* **Libraries:**
-
-  * pandas, numpy
-  * matplotlib
-  * scikit-learn
-  * statsmodels
-* **Framework:** Streamlit
+* Python
+* Pandas, NumPy
+* Matplotlib
+* Scikit-learn
+* Statsmodels
+* Streamlit
 
 ---
 
 ## 📂 Project Structure
 
-```id="e6k2fd"
+```
 ferry-demand-forecasting/
-│── ferry_forecast_app.py        # Main Streamlit application
-│── Toronto_Island_Ferry_Tickets.csv   # Dataset
-│── requirements.txt            # Dependencies
-│── README.md                   # Project documentation
+│── ferry_forecast_app.py
+│── Toronto_Island_Ferry_Tickets.csv
+│── requirements.txt
+│── README.md
 ```
 
 ---
@@ -88,21 +65,27 @@ ferry-demand-forecasting/
 
 ### 1️⃣ Clone the repository
 
-```bash id="o8z6z1"
-git clone https://github.com/your-username/ferry-demand-forecasting.git
+```bash
+git clone https://github.com/sudip758582/ferry-demand-forecasting.git
 cd ferry-demand-forecasting
 ```
 
 ### 2️⃣ Install dependencies
 
-```bash id="d1n0c4"
+```bash
 pip install -r requirements.txt
 ```
 
 ### 3️⃣ Run the application
 
-```bash id="q6ks2c"
+```bash
 streamlit run ferry_forecast_app.py
+```
+
+Then open in browser:
+
+```
+http://localhost:8503/
 ```
 
 ---
@@ -110,40 +93,26 @@ streamlit run ferry_forecast_app.py
 ## 📊 Dataset
 
 * Source: Toronto Parks, Forestry & Recreation
-* Time Range: **2015 – 2025**
-* Frequency: **15-minute intervals**
-* Key Columns:
-
-  * Timestamp
-  * Sales Count
-  * Redemption Count
+* Time Range: 2015 – 2025
+* Frequency: 15-minute intervals
 
 ---
 
 ## 🎯 Business Use Case
 
-This system can help:
-
 * 🚢 Optimize ferry scheduling
-* 👥 Manage passenger crowd effectively
-* 📉 Reduce waiting time and congestion
-* 📊 Support data-driven decision making
-
----
-
-## 📸 Application Preview
-
-*(You can add screenshots here after uploading images to GitHub)*
+* 👥 Manage passenger demand
+* 📉 Reduce congestion
+* 📊 Enable data-driven planning
 
 ---
 
 ## 🌐 Future Improvements
 
-* Deploy using Streamlit Cloud / AWS
-* Add real-time data integration
-* Use advanced models (LSTM, Prophet)
-* Improve hyperparameter tuning
-* Add alert system for peak demand
+* Deploy on Streamlit Cloud (public link)
+* Add real-time data pipeline
+* Advanced models (LSTM / Prophet)
+* Hyperparameter tuning
 
 ---
 
@@ -154,6 +123,6 @@ Aspiring Data Analyst
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub and share your feedback!
+If you find this project useful, consider giving it a ⭐ on GitHub!
