@@ -10,8 +10,10 @@ A **Streamlit-based predictive analytics web application** that forecasts short-
   https://github.com/sudip758582/ferry-demand-forecasting
 
 * 💻 **Local Dashboard (runs on your system only):**
-  http://localhost:8503/
-
+  http://localhost:8501/
+* **Other:**
+  cd "C:\Users\ACER\Downloads\Ferry Ticket Demand Forecasting"
+streamlit run ferry_forecast_app.py
 ---
 
 ## 📌 Project Overview
